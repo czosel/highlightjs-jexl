@@ -1,6 +1,6 @@
 {
   "name": "highlightjs-jexl",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Jexl plugin for highlight.js",
   "main": "src/index.js",
   "scripts": {
@@ -11,7 +11,6 @@
     "type": "git",
     "url": "git+https://github.com/czosel/highlightjs-jexl.git"
   },
-  "main": "src/index.js",
   "module": "dist/highlightjs-jexl.esm.js",
   "files": [
     "dist"
