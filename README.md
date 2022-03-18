@@ -9,10 +9,10 @@ Simply include the `highlight.js` script package in your webpage or Node app, lo
 If you're not using a build system and just want to embed this in your webpage:
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/highlightjs"></script>
+<script src="https://cdn.jsdelivr.net/npm/highlight.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/highlightjs-jexl"></script>
 <script>
-  hljs.registerLanguage("jexl", window.hljsDefineVue);
+  hljs.registerLanguage("jexl", window.hljsDefineJexl);
   hljs.highlightAll();
 </script>
 ```
@@ -20,7 +20,7 @@ If you're not using a build system and just want to embed this in your webpage:
 If you're using webpack / rollup / browserify / node:
 
 ```javascript
-var hljs = require("highlightjs");
+var hljs = require("highlight.js");
 var hljsDefineJexl = require("highlightjs-jexl");
 
 hljsDefineJexl(hljs);

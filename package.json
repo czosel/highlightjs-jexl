@@ -5,13 +5,13 @@
   "main": "src/index.js",
   "scripts": {
     "build": "rollup --config",
-    "prepublishOnly": "yarpm build"
+    "prepublishOnly": "yarpm run build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/czosel/highlightjs-jexl.git"
   },
-  "main": "dist/highlightjs-jexl.cjs.js",
+  "main": "src/index.js",
   "module": "dist/highlightjs-jexl.esm.js",
   "files": [
     "dist"
