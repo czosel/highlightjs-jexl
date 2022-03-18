@@ -13,6 +13,7 @@
   },
   "module": "dist/highlightjs-jexl.esm.js",
   "files": [
+    "src",
     "dist"
   ],
   "keywords": [
