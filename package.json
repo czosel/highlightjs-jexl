@@ -3,11 +3,19 @@
   "version": "0.0.1",
   "description": "Jexl plugin for highlight.js",
   "main": "src/index.js",
-  "scripts": {},
+  "scripts": {
+    "build": "rollup --config",
+    "prepublishOnly": "yarpm build"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/czosel/highlightjs-jexl.git"
   },
+  "main": "dist/highlightjs-jexl.cjs.js",
+  "module": "dist/highlightjs-jexl.esm.js",
+  "files": [
+    "dist"
+  ],
   "keywords": [
     "jexl",
     "hljs",
@@ -17,6 +25,9 @@
   "author": "Christian Zosel",
   "license": "MIT",
   "devDependencies": {
-    "highlight.js": "^10.7.2"
+    "highlight.js": "^10.7.2",
+    "rollup": "^2.70.1",
+    "rollup-plugin-terser": "^7.0.2",
+    "yarpm": "^1.1.1"
   }
 }
