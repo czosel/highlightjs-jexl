@@ -4,20 +4,7 @@ This adds support for [Jexl](https://github.com/TomFrost/Jexl) to [highlightjs](
 
 ## Usage
 
-Simply include the `highlight.js` script package in your webpage or Node app, load up this module, and apply it to `hljs`.
-
-If you're not using a build system and just want to embed this in your webpage:
-
-```html
-<script src="https://cdn.jsdelivr.net/npm/highlight.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/highlightjs-jexl"></script>
-<script>
-  window.hljsDefineJexl(hljs);
-  hljs.highlightAll();
-</script>
-```
-
-If you're using webpack / rollup / browserify / node:
+This module exports a function `hljsDefineJexl` - call it with the argument `hljs` to register Jexl support in highlight.js!
 
 ```javascript
 import hljs from "highlight.js";
@@ -26,3 +13,16 @@ import hljsDefineJexl from "highlightjs-jexl";
 hljsDefineJexl(hljs);
 hljs.highlightAll();
 ```
+
+If you're not using a build system and just want to embed this in your webpage:
+
+```html
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.0/build/highlight.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/highlightjs-jexl/dist/highlightjs-jexl.min.js"></script>
+<script>
+  window.hljsDefineJexl(hljs);
+  hljs.highlightAll();
+</script>
+```
+
+See this [fiddle](https://jsfiddle.net/czosel/vmpLkrjc/2/) for a complete example.
