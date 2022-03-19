@@ -1,6 +1,7 @@
 export default function() {
   return {
     name: 'Jexl',
+    disableAutodetect: true,
     contains: [
       {
         scope: 'string',
