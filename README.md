@@ -12,7 +12,7 @@ If you're not using a build system and just want to embed this in your webpage:
 <script src="https://cdn.jsdelivr.net/npm/highlight.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/highlightjs-jexl"></script>
 <script>
-  hljs.registerLanguage("jexl", window.hljsDefineJexl);
+  window.hljsDefineJexl(hljs);
   hljs.highlightAll();
 </script>
 ```
@@ -20,15 +20,9 @@ If you're not using a build system and just want to embed this in your webpage:
 If you're using webpack / rollup / browserify / node:
 
 ```javascript
-var hljs = require("highlight.js");
-var hljsDefineJexl = require("highlightjs-jexl");
+import hljs from "highlight.js";
+import hljsDefineJexl from "highlightjs-jexl";
 
 hljsDefineJexl(hljs);
 hljs.highlightAll();
 ```
-
-## Credits
-
-The Code is largely based on the [Jexl support for Prism.js](https://github.com/PrismJS/prism/pull/2764).
-
-Packaging stuff and this README is based on the [`highlightjs-octave` package](https://github.com/highlightjs/highlightjs-octave).

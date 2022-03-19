@@ -1,7 +1,5 @@
-const grammar = require("./languages/jexl");
+import grammar from "./languages/jexl.js";
 
-module.exports = function(hljs) {
+export default function(hljs) {
     hljs.registerLanguage('jexl', grammar);
 };
-
-module.exports.jexl = grammar;

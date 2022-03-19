@@ -1,4 +1,4 @@
-function hljsDefineJexl(hljs) {
+export default function() {
   return {
     name: 'Jexl',
     contains: [
@@ -58,5 +58,3 @@ function hljsDefineJexl(hljs) {
     illegal: '\\S'
   };
 }
-
-module.exports = hljsDefineJexl;
